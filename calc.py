@@ -1,10 +1,11 @@
 #  Volum kalkulator
-# made by Kristian Sundal /(Kesmon/)
+# made by Kristian Sundal/(Kesmon/)
 
 pi=3.14159265359
+start = '\n\nVelg mellom\n"kjegle","pyramide","tpyramide","sylinder","kule","prisme" eller "tprisme"\n"avslutt" for å avslutte'
+trekant = 'Vil du ha trekant versjonen? "ja/nei"'
 fase=''
-print('Velg mellom "sylinder","kule","prisme" eller "tprisme"')
-print('"avslutt" for å avslutte')
+print(start)
 fase=input('> ')
 
 
@@ -21,8 +22,7 @@ while fase!= 'avslutt':
     
         print('\n',volum)
 
-        print('\n\nVelg mellom "sylinder","kule","prisme" eller "tprisme"')
-        print('"avslutt" for å avslutte')
+        print(start)
         fase=input('> ')
 
     elif fase=='kule':
@@ -33,8 +33,7 @@ while fase!= 'avslutt':
 
         print('\n',volum)
 
-        print('\n\nVelg mellom "sylinder","kule","prisme" eller "tprisme"')
-        print('"avslutt" for å avslutte')
+        print(start)
         fase=input('> ')
 
     elif fase=='prisme':
@@ -51,8 +50,7 @@ while fase!= 'avslutt':
 
         print('\n',volum)
 
-        print('\n\nVelg mellom "sylinder","kule","prisme" eller "tprisme"')
-        print('"avslutt" for å avslutte')
+        print(start)
         fase=input('> ')
 
     elif fase=='tprisme':
@@ -69,15 +67,61 @@ while fase!= 'avslutt':
 
         print('\n',volum)
 
-        print('\n\nVelg mellom "sylinder","kule","prisme" eller "tprisme"')
-        print('"avslutt" for å avslutte')
+        print(start)
+        fase=input('> ')
+
+    elif fase=='kjegle' :
+        print('\nRadius')
+        radius = int(input('> '))
+
+        print('Høyde')
+        hoyde=int(input('> '))
+
+        volum=pi*radius*radius*hoyde/3
+
+        print('\n', volum)
+
+        print(start)
+        fase=input('> ')
+
+    elif fase=='tpyramide':
+        print('\nGrunnlinje')
+        glinja=int(input('> '))
+
+        print('Høyden')
+        hoyden=int(input('> '))
+
+        print('Dybden')
+        dybde=int(input('> '))
+
+        volum=glinja*hoyden/2*dybde/3
+
+        print('\n',volum)
+
+        print(start)
+        fase=input('> ')
+
+    elif fase=='pyramide':
+        print('\nLengden')
+        lengden=int(input('> '))
+
+        print('Bredden')
+        bredde=int(input('> '))
+
+        print('Høyden')
+        hoyde=int(input('> '))
+
+        volum=lengden*bredde*hoyde/3
+
+        print('\n',volum)
+
+        print(start)
         fase=input('> ')
 
     else :
-        print('Velg et av alternativene')
+        print('\n\nVelg et av alternativene')
 
-        print('\n\nVelg mellom "sylinder","kule","prisme" eller "tprisme"')
-        print('"avslutt" for å avslutte')
+        print(start)
         fase=input('> ')
 
         
