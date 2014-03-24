@@ -10,5 +10,6 @@ Instalasjon:
 
 To do list:
   1.  Lage enkel GUI
-  2.  legge til overflate utregning
-  3.  Legge til 2D figurer
+  2.  Lage engelsk oversettelse
+  3.  legge til overflate utregning
+  4.  Legge til 2D figurer
