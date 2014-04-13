@@ -1,16 +1,17 @@
 #  Volum kalkulator
 # made by Kristian Sundal/(Kesmon/)
+# Release 1.0
 
 pi=3.14159265359
 start = '\n\nVelg mellom\n"kjegle","pyramide","tpyramide","sylinder","kule","prisme" eller "tprisme"\n"avslutt" for å avslutte'
 trekant = 'Vil du ha trekant versjonen? "ja/nei"'
 fase=''
 
+print(start)
+fase = input('> ')
+
 
 while fase != 'avslutt':
-    print(start)
-    fase = input('> ')
-   
     if fase=='sylinder':
         print('\nLengden på radiusen')
         rad=int(input('> '))
@@ -115,6 +116,11 @@ while fase != 'avslutt':
 
         print('\n',volum)
 
+        print(start)
+        fase=input('> ')
+
+    else:
+        print('\n\n\nVelg noen av alternativene')
         print(start)
         fase=input('> ')
         
